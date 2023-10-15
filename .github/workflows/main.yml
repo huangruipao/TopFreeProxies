@@ -45,9 +45,12 @@ jobs:
       run: |                 
          git config --local user.email "alan999@foxmail.com"
          git config --local user.name "alanbobs999"
+         git pull origin master
+         git add ./sub
+         git add ./update
          git add ./sub
          git add ./utils
-         # git commit -m "Merge sub lists"
+         git commit -m "Merge sub lists"
          git add Eternity.yml
          git commit -m "Update Clash provider"
     - name: 推送更改
